@@ -7,19 +7,19 @@ document.addEventListener('DOMContentLoaded', function(){
         const positionNow = window.scrollY
 
         if (positionNow<widthHero){
-            hiddenElementsHeader()
-        }else{
             showElementsHeader()
+        }else{
+            hiddenElementsHeader()
         }
     })
 })
 
-function hiddenElementsHeader(){
-    const header = document.querySelector('header')
-    header.classList.add('header--is-hidden');
-}
-
 function showElementsHeader(){
     const header = document.querySelector('header')
     header.classList.remove('header--is-hidden');
+}
+
+function hiddenElementsHeader(){
+    const header = document.querySelector('header')
+    header.classList.add('header--is-hidden');
 }
