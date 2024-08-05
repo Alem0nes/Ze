@@ -80,6 +80,7 @@ body {
         max-width: 80%;
         margin: 0 auto;
         align-content: center;
+        padding-bottom: 70px;
         
         &__titulo {
             @include title(5vw);
@@ -104,7 +105,6 @@ body {
                 text-decoration: none;
                 color: #100F0F;
                 margin-right: 1rem ;
-                
             }
         }
     }
@@ -119,14 +119,13 @@ body {
 
         #chandelerimg {
             max-width: 100%;
-            margin: 200px 0 1vw 0;
+            margin: 120px 0 1vw 0;
             background-color: hsl(31, 60%, 45%, 0.5);
             border-radius: 50px;    
         }
 
         #embaubaimg {
             max-width: 100%;
-            margin-bottom: 30px;
             background-color: hsl(31, 60%, 45%, 0.5);
             border-radius: 50px;
             padding: 14px;
@@ -141,8 +140,9 @@ body {
             border-radius: 40px;
             padding: 7px;
             border:#100F0F solid 2px;
-            margin-top: 50px;
+            margin-top: 25px;
             color: black;
+            margin-bottom: 50px;
         }
     }
 }
@@ -150,17 +150,73 @@ body {
 .faixa{
     max-width: 100%;
     height: 48px;
-    background-color: #B7752E;
-    margin-top: 20px;
+    background-color: #B7752E; 
 }
 
-.sinopse{
-    max-width: 100%;
-    max-height: 800px;
 
-    img{
-        max-width: 100%;
-        height: 1000px;
-        object-fit: cover;
+.sinopse {
+    background-image: url(/dist/images/fotos/still-01_Ze-scaled.jpg);
+    background-size: cover;
+    background-position: 0vw -5vw;
+    background-repeat: none;
+    width: 130%;
+    height: 800px;
+    padding-top:10vw ;
+
+    &__title{
+        max-width: 26%;
+        margin: auto 10vw;
+        @include title(56px);
+        line-height: 25px;
+        margin-bottom: 3vw;
+        margin-left: 15vw;
+    }
+    
+    &__text{
+        max-width: 26%;
+        margin: auto 10vw;
+        @include text(24px);
+        line-height: 25px;
+    }
+}
+
+.diretor {
+    background-image: url(/dist/images/fotos/foto-do-diretor.png);
+    background-size: cover;
+    background-position: -9vw 0vw;
+    background-repeat: none;
+    width: 100%;
+    height: 800px;
+    padding-top:10vw ;
+
+    &__title{
+        max-width: 26%;
+        margin: auto 10vw;
+        @include title(56px);
+        line-height: 25px;
+        margin-bottom: 3vw;
+        margin-left: 60vw;
+    }
+    
+    &__text{
+        max-width: 35%;
+        margin-left: 55vw;
+        @include text(24px);
+        line-height: 25px;
+    }
+}
+
+.fotos{
+
+    &__title{
+        margin: 3vw auto;
+        @include title(56px);
+        text-align: center;
+    }
+
+    #foto4{
+        max-width: 1505px;
+        max-height: 513;
+        
     }
 }
