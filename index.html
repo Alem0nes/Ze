@@ -10,19 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="hero">
-        <video controls class="hero__video" src="/dist/images/trailer/ze_trailer.mp4"></video>
-        <div class="hero__content">
-            <h1 class="hero__content__titulo">Zé</h1>
-            <img class="hero__content__img" src="./dist/images/embauba_logo_wp_nova-1.png" alt="">
-            <nav class="hero__content__menu">
-                <a href="#">Sinopse</a>
-                <a href="#">Diretor</a>
-                <a href="#">Fotos</a>
-                <a href="#">FAQ</a>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="header__content__titulo">Zé</h1>
+            <img class="header__content__img" src="./dist/images/embauba_logo_wp_nova-1.png" alt="">
+            <nav class="fixed-menu">
+                <ul class="header__content__menu">
+                    <li>
+                        <a href="#">Sinopse</a>
+                    </li>
+                    <li>
+                        <a href="#">Diretor</a>
+                    </li>
+                    <li>
+                        <a href="#">Fotos</a>
+                    </li>
+                    <li>
+                        <a href="#">Ficha</a>
+                    </li>
+                </ul>
             </nav>
             <img id="icon_sound" src="./dist/images/Icon/som-desligado.png" alt="">
         </div>
+    </header>
+    <section class="hero">
+        <video controls class="hero__video" src="/dist/images/trailer/ze_trailer.mp4"></video>
         <div class="hero__icones">
             <img id="chandelerimg" src="./dist/images/Untitled design.png" alt="">
             <img id="embaubaimg" src="./dist/images/embaubaplay-logo-horizontal.svg" alt="">
@@ -44,18 +56,75 @@
         </div>
     </section>
     <div class="faixa"></div>
-    <section>
+    <section class="sessao__fotos">
         <div class="fotos">
             <h2 class="fotos__title">Fotos</h2>
-            <img id="foto4" src="./dist/images/fotos/still-04_Ze-scaled.jpg" alt="">
-            <img id="foto1" src="./dist/images/fotos/still-01_Ze-scaled.jpg" alt="">
-            <img id="foto2" src="./dist/images/fotos/still-02_Ze-scaled.jpg" alt="">
-            <img id="foto3" src="./dist/images/fotos/still-03_Ze-scaled.jpg" alt="">
-            <img id="foto5" src="./dist/images/fotos/still-05_Ze-scaled.jpg" alt="">
-            <img id="foto6" src="./dist/images/fotos/still-06_Ze-scaled.jpg" alt="">
-            <img id="foto7" src="./dist/images/fotos/still-07_Ze-scaled.jpg" alt="">
-            <img id="foto8" src="./dist/images/fotos/still-08_Ze-scaled.jpg" alt="">
+            <div class="fotos__4">
+                <img class="fotogafia" src="./dist/images/fotos/still-04_Ze-scaled.jpg" alt="">
+            </div>
+            <div class="fotos__8">
+                <img class="fotogafia" src="./dist/images/fotos/still-08_Ze-scaled.jpg" alt="">
+            </div>
+            <div class="fotos__5">
+                <img class="fotogafia" src="./dist/images/fotos/still-05_Ze-scaled.jpg" alt="">
+            </div>
+            <div class="fotos__2">
+                <img class="fotogafia" src="./dist/images/fotos/still-02_Ze-scaled.jpg" alt="">
+            </div>
+            <div class="fotos__7">
+                <img class="fotogafia" src="./dist/images/fotos/still-07_Ze-scaled.jpg" alt="">
+            </div>
+            <div class="fotos__1">
+                <img class="fotogafia" src="./dist/images/fotos/still-01_Ze-scaled.jpg" alt="">
+            </div>
+            <div class="fotos__3">
+                <img class="fotogafia" src="./dist/images/fotos/still-03_Ze-scaled.jpg" alt="">
+            </div>            
+            <div class="fotos__6">
+                <img class="fotogafia" src="./dist/images/fotos/still-06_Ze-scaled.jpg" alt="">
+            </div>
         </div>
     </section>
+    <div class="faixa"></div>
+    <section>
+        <div class="faq">
+            <h2 class="faq__title2">
+                FICHA TÉCNICA
+            </h2>
+            <div class="faq__ficha1">
+                <p>
+                    País, ano, duração:</br>
+                    Brasil, 2023, 120'</br></br>   
+                    Empresa produtora:</br>
+                    Filmegraph</br></br>
+                    Produção:</br>
+                    Samantha Capdeville</br></br>
+                    Roteiro:</br>
+                    Anna Flávia Dias Sales e Rafel Conde</br></br>
+                    Direção de fotogafia:</br>
+                    Luís Abramo</p>
+                <p>
+                    Diração de arte:</br>
+                    Oswaldo Lioi</br></br>
+                    Som direto:</br>
+                    Gustavo Fioravante</br></br>
+                    Desenho de som e trilha sonora original:</br>
+                    Pedro Durães</br></br>
+                    Montagem:</br>
+                    Fabian Remy</br></br>
+                    Elenco:</br>
+                    Caio Horowicz, Eduarda Fernandes, </br>Samantha Jones, Rafael Protzner, Yara de Novaes,</br> Gustavo Werneck, Alexandre Cioletti
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="faixa"></div>
+    <footer>
+        <div class="footer">
+        Site produzido por Renan Hernandes</br>
+        &#169 Filme B - Direitos reservados
+        </div>
+    </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
