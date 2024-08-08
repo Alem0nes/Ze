@@ -58,6 +58,10 @@ body {
     font-size: 2vw;
 }
 
+.header__content__menu a.active{
+    color: $corTextoTitulo;
+    font-weight:500;
+}
 
 .header{
     position: fixed;
@@ -71,7 +75,7 @@ body {
 
     &--is-hidden{
         background-color: rgb(183, 117, 46, 0.98);
-        transition: background-color 0.6s ease;
+        transition: background-color 1s ease;
     }
 
     &__content {
@@ -93,14 +97,21 @@ body {
 
         #icon_sound{
             height: 32px;
+            width: 32px;
             color: #100F0F;
-            padding: 3px;
-
+            padding: 3px;    
 
             &:hover{
-                background-color:$corTextoTitulo;
-                border-radius: 50%;
+                color:$corTextoTitulo;
             }
+        }
+
+        #icon_sound.sound-on {
+            content: url('./dist/images/Icon/som-ligado.png');
+        }
+
+        #icon_sound.sound-off {
+            content: url('./dist/images/Icon/som-desligado.png');
         }
 
         &__img {
@@ -121,6 +132,7 @@ body {
                 
                 &:hover{
                     color: $corTextoTitulo;
+                    font-weight:500;
                 }
             }
         }
@@ -200,7 +212,7 @@ body {
 
 .faixa{
     max-width: 100%;
-    height: 48px;
+    height: 2rem;
     background-color: #B7752E; 
 }
 
@@ -387,13 +399,13 @@ body {
     
     &__ficha1{
         max-width:80%;
-        margin: 0px 5vw 0px 15vw;
+        margin: 2rem 5vw 0px 15vw;
         @include text(24px);
         line-height: 25px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 }
 

@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header class="header">
@@ -17,24 +19,24 @@
             <nav class="fixed-menu">
                 <ul class="header__content__menu">
                     <li>
-                        <a href="#">Sinopse</a>
+                        <a href="#sinopse">Sinopse</a>
                     </li>
                     <li>
-                        <a href="#">Diretor</a>
+                        <a href="#diretor">Diretor</a>
                     </li>
                     <li>
-                        <a href="#">Fotos</a>
+                        <a href="#fotos">Fotos</a>
                     </li>
                     <li>
-                        <a href="#">Ficha</a>
+                        <a href="#ficha">Ficha</a>
                     </li>
                 </ul>
             </nav>
-            <img id="icon_sound" src="./dist/images/Icon/som-desligado.png" alt="">
+            <i id="icon_sound" class="fas fa-volume-up"></i>
         </div>
     </header>
     <section class="hero">
-        <video controls class="hero__video" src="/dist/images/trailer/ze_trailer.mp4"></video>
+        <video id="trailerVideo" autoplay class="hero__video" src="/dist/images/trailer/ze_trailer.mp4"></video>
         <div class="hero__icones">
             <img id="chandelerimg" src="./dist/images/Untitled design.png" alt="">
             <img id="embaubaimg" src="./dist/images/embaubaplay-logo-horizontal.svg" alt="">
@@ -43,20 +45,20 @@
     </section>
     <section>
     <div class="faixa"></div>
-    <div class="sinopse">
+    <div id="sinopse" class="sinopse">
         <h2 class="sinopse__title">Sinopse</h2>
         <p class="sinopse__text">Zé é líder do Movimento Estudantil Brasileiro e participa de um grupo de resistência contra a ditadura militar no Brasil (1964-73). Perseguido, ele escolhe a clandestinidade. Ele deixa sua vida de classe média alta para viver com o povo, realizando o trabalho de alfabetização e conscientização política dos mais pobres. Ele conhece sua parceira Bete, com quem tem 2 filhos. Durante seu tempo de clandestinidade, ele recebe Gilberto, irmão de Bete, como um novo militante. Gilberto é, no entanto, um informante do regime repressivo. Zé morre sob tortura aos 27 anos, falsamente acusado pelos militares de ter traído todos os seus companheiros, desaparecidos até hoje.</p>
     </div>  
     </section>
     <div class="faixa"></div>
-    <section>
+    <section id="diretor">
         <div class="diretor">
             <h2 class="diretor__title">Direção</h2>
             <p class="diretor__text">Graduado em Ciências Econômicas pela UFMG, mestre em Artes/Cinema pela USP e doutor em Artes Cênicas pela UNIRIO com bolsa sanduíche em Performance Studies na NYU. Cursou o pós-doutorado na Escola de Comunicações e Artes da USP. Dirigiu documentários e programas jornalísticos para a Rede Minas de Televisão. Foi coordenador do Cine Humberto Mauro e Setor de Cinema da Fundação Clóvis Salgado BH/MG. É professor do Programa de Pós-graduação em Artes da Escola de Belas Artes/UFMG. Em teatro co-dirigiu a peça “a brincadeira” (2015-2016), para o circuito CCBB, e dirigiu o projeto Experimentos Cênicos com o Grupo Galpão (2019). Publicou artigos e, em 2019, lançou o livro O Ator e a Câmera: Investigações Sobre o Encontro no Jogo do Filme.</p>
         </div>
     </section>
     <div class="faixa"></div>
-    <section class="sessao__fotos">
+    <section id="fotos" class="sessao__fotos">
         <div class="fotos">
             <h2 class="fotos__title">Fotos</h2>
             <div class="fotos__4">
@@ -87,7 +89,7 @@
     </section>
     <div class="faixa"></div>
     <section>
-        <div class="faq">
+        <div id="ficha" class="faq">
             <h2 class="faq__title2">
                 FICHA TÉCNICA
             </h2>
