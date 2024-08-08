@@ -106,13 +106,12 @@ body {
             }
         }
 
-        #icon_sound.sound-on {
-            content: url('./dist/images/Icon/som-ligado.png');
+        .sound-icon .fa-volume-up::before {
+            content: "\f028";
         }
-
-        #icon_sound.sound-off {
-            content: url('./dist/images/Icon/som-desligado.png');
-        }
+        
+        .sound-icon .fa-volume-mute::before {
+            content: "\f6a9"; 
 
         &__img {
             max-height: 60px;
@@ -140,13 +139,13 @@ body {
 }
 
 .hero {
-    height: 785px;
+    height: 800 px;
     &__video {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 105%;
-        height: 105%;
+        width: 100%;
+        height: 100%;
         transform: translate(-50%, -50%);
         z-index: -1;
         object-fit: cover;
@@ -159,7 +158,24 @@ body {
         flex-direction: column;
         margin: auto 10vw;
         
+        .trailerText {
+            max-width: 100%;
+            @include text(24px);
+            background-color:$corBeje;
+            border-radius: 40px;
+            padding: 7px;
+            border:#100F0F solid 2px;
+            margin-top: 25px;
+            color: black;
+            margin-bottom: 100px;
+            transition: color 0.3s ease, border-color 0.3s ease;
 
+            &:hover{
+                color: #ffffff;
+                border-color: #ffffff;
+                
+            }
+        }
 
         #chandelerimg {
             max-width: 100%;
@@ -181,6 +197,7 @@ body {
             padding: 14px;
             margin-bottom: 1.5vw;
             transition: background-color 0.3s ease;
+            width: 100%;
 
             &:hover{
                 cursor: pointer;
@@ -188,25 +205,10 @@ body {
             }
         }
 
-        a {
-            max-width: 100%;
+        a{
             text-decoration: none;
-            @include text(24px);
-            background-color:$corBeje;
-            border-radius: 40px;
-            padding: 7px;
-            border:#100F0F solid 2px;
-            margin-top: 25px;
-            color: black;
-            margin-bottom: 50px;
-            transition: color 0.3s ease, border-color 0.3s ease;
-
-            &:hover{
-                color: #ffffff;
-                border-color: #ffffff;
-                
-            }
         }
+
     }
 }
 
@@ -229,16 +231,16 @@ body {
     &__title{
         max-width: 26%;
         margin: auto 10vw;
-        @include title(56px);
+        @include title(36px);
         line-height: 25px;
         margin-bottom: 3vw;
-        margin-left: 15vw;
+        margin-left: 20vw;
     }
     
     &__text{
         max-width: 26%;
         margin: auto 10vw;
-        @include text(24px);
+        @include text(18px);
         line-height: 25px;
     }
 }
@@ -255,16 +257,16 @@ body {
     &__title{
         max-width: 26%;
         margin: auto 10vw;
-        @include title(56px);
+        @include title(36px);
         line-height: 25px;
         margin-bottom: 3vw;
-        margin-left: 60vw;
+        margin-left: 66vw;
     }
     
     &__text{
         max-width: 35%;
         margin-left: 55vw;
-        @include text(24px);
+        @include text(18px);
         line-height: 25px;
     }
 }
@@ -278,7 +280,7 @@ body {
 
     &__title{
         margin: 3vw auto;
-        @include title(56px);
+        @include title(36px);
         text-align: center;
     }
 
@@ -392,15 +394,15 @@ body {
     }
 
     &__title2{
-        @include title(56px);
+        @include title(36px);
         margin: 3vw auto;
         text-align: center;
     }
     
     &__ficha1{
         max-width:80%;
-        margin: 2rem 5vw 0px 15vw;
-        @include text(24px);
+        margin: 2rem 10vw 0px 15vw;
+        @include text(18px);
         line-height: 25px;
         display: flex;
         align-items: center;
@@ -417,3 +419,42 @@ body {
     padding-bottom: 1rem;
 }
 
+.lightBox {
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 10px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 700px;
+        border: #B7752E solid 1px;
+    }}
+
+
+.close {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

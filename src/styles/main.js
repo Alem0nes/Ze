@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             hiddenElementsHeader();
         }
-a
+
         changeActiveLink();
     });
 
@@ -34,14 +34,11 @@ a
         }
     }
 
-    navSelect.forEach((link) => link.classList.remove('active'));
-
     changeActiveLink();
 
     const video = document.getElementById('trailerVideo');
     const soundIcon = document.getElementById('icon_sound');
 
-    // Função para alternar som
     function toggleSound() {
         if (video.muted) {
             video.muted = false;
@@ -53,27 +50,44 @@ a
             soundIcon.classList.add('fa-volume-mute');
         }
     }
-    
-    // Adiciona o evento de clique ao ícone de som
+
     soundIcon.addEventListener('click', toggleSound);
     
-
-    // Define o estado inicial do ícone baseado no estado do vídeo
     if (video.muted) {
-        soundToggle.classList.add('sound-off');
+        soundIcon.classList.add('sound-off');
     } else {
-        soundToggle.classList.add('sound-on');
+        soundIcon.classList.add('sound-on');
+    }
+
+    function showElementsHeader() {
+        const header = document.querySelector('header');
+        header.classList.remove('header--is-hidden');
+    }
+
+    function hiddenElementsHeader() {
+        const header = document.querySelector('header');
+        header.classList.add('header--is-hidden');
+    }
+
+    const lightbox = document.getElementById('lightBox');
+    const lightboxImage = document.getElementById('lightBoxImg');
+    const myImages = document.getElementsByClassName('fotogafia');
+    const closeButton = document.getElementsByClassName('close')[0];
+
+    for (let i = 0; i < myImages.length; i++) {
+        myImages[i].onclick = function() {
+            lightbox.style.display = "flex"; 
+            lightboxImage.src = this.src; 
+        }
+    }
+
+    closeButton.onclick = function() {
+        lightbox.style.display = "none";
+    }
+
+    lightbox.onclick = function(event) {
+        if (event.target === lightbox) {
+            lightbox.style.display = "none";
+        }
     }
 });
-
-
-
-function showElementsHeader() {
-    const header = document.querySelector('header');
-    header.classList.remove('header--is-hidden');
-}
-
-function hiddenElementsHeader() {
-    const header = document.querySelector('header');
-    header.classList.add('header--is-hidden');
-}
