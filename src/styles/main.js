@@ -29,12 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         navSelect.forEach((link) => link.classList.remove('active'));
 
-        if (index > 0) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            navSelect[navSelect.length - 1].classList.add('active');
+        } else if (index > 0) {
             navSelect[index - 1].classList.add('active');
         }
     }
-
-    changeActiveLink();
+    
+    window.addEventListener('scroll', changeActiveLink);    
 
     const video = document.getElementById('trailerVideo');
     const soundIcon = document.getElementById('icon_sound');

@@ -69,7 +69,7 @@ body {
     left: 0;
     background-color: transparent;
     width: 100%;
-    height: 100px;
+    height: 7vw;
     transition: background-color 0.6s ease;
     z-index: 1000;
 
@@ -96,8 +96,8 @@ body {
         }
 
         #icon_sound{
-            height: 32px;
-            width: 32px;
+            height: 2vw;
+            width: 2vw;
             color: #100F0F;
             padding: 3px;    
 
@@ -112,9 +112,10 @@ body {
         
         .sound-icon .fa-volume-mute::before {
             content: "\f6a9"; 
+        }
 
         &__img {
-            max-height: 60px;
+            max-height: 5vw;
             margin-right: 20vw;
         }
 
@@ -160,10 +161,10 @@ body {
         
         .trailerText {
             max-width: 100%;
-            @include text(24px);
+            @include text(1.5vw);
             background-color:$corBeje;
             border-radius: 40px;
-            padding: 7px;
+            padding: 0.4375em;
             border:#100F0F solid 2px;
             margin-top: 25px;
             color: black;
@@ -179,7 +180,7 @@ body {
 
         #chandelerimg {
             max-width: 100%;
-            margin: 220px 0 1vw 0;
+            margin: 13.75rem 0 1vw 0;
             background-color: hsl(31, 60%, 45%, 0.5);
             border-radius: 50px; 
             transition: background-color 0.3s ease;
@@ -224,14 +225,14 @@ body {
     background-size: cover;
     background-position: 0vw -5vw;
     background-repeat: none;
-    width: 130%;
-    height: 800px;
+    width: 140%;
+    height: 55vw;
     padding-top:10vw ;
 
     &__title{
         max-width: 26%;
         margin: auto 10vw;
-        @include title(36px);
+        @include title(3vw);
         line-height: 25px;
         margin-bottom: 3vw;
         margin-left: 20vw;
@@ -240,8 +241,8 @@ body {
     &__text{
         max-width: 26%;
         margin: auto 10vw;
-        @include text(18px);
-        line-height: 25px;
+        @include text(1.2vw);
+        line-height: 1.4vw;
     }
 }
 
@@ -251,13 +252,13 @@ body {
     background-position: -9vw 0vw;
     background-repeat: none;
     width: 100%;
-    height: 800px;
+    height: 55vw;
     padding-top:10vw ;
 
     &__title{
         max-width: 26%;
         margin: auto 10vw;
-        @include title(36px);
+        @include title(3vw);
         line-height: 25px;
         margin-bottom: 3vw;
         margin-left: 66vw;
@@ -266,13 +267,13 @@ body {
     &__text{
         max-width: 35%;
         margin-left: 55vw;
-        @include text(18px);
-        line-height: 25px;
+        @include text(1.2vw);
+        line-height: 1.4vw;
     }
 }
 
 .sessao__fotos{
-    height: 1900px;
+    height: 125vw;
 }
 
 .fotos{
@@ -280,7 +281,7 @@ body {
 
     &__title{
         margin: 3vw auto;
-        @include title(36px);
+        @include title(3vw);
         text-align: center;
     }
 
@@ -292,90 +293,89 @@ body {
     }
 
     &__4{
-        width: 1300px;
-        height: 430px;
+        width: 90vw;
+        height: 30vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
         margin: 0 auto;
-
     }
 
     &__2{
-        width: 494px;
-        height: 494px;
+        width: 33vw;
+        height: 33vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
-        margin: 200px 0px 0px 54px;
+        margin: 15vw 0px 0px 3vw;
         border-radius: 50%;
         position: absolute;
         top: 50%;
     }
 
     &__3{
-        width: 600px;
-        height: 400px;
+        width: 40vw;
+        height: 28vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
-        margin: 150px 0px 0px 700px;
+        margin: 12vw 0px 0px 50vw;
         position: absolute;
         top: 50%;
     }
 
     &__5{
-        width: 700px;
-        height: 350px;
+        width: 48vw;
+        height: 24vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
-        margin:450px 0px 0px 400px;
+        margin:35vw 0px 0px 25vw;
         position: absolute;
         top: 50%;
     }
 
     &__8{
-        width: 600px;
-        height: 400px;
+        width: 36vw;
+        height: 28vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
-        margin:760px 0px 0px 150px;
+        margin:54vw 0px 0px 8vw;
         position: absolute;
         top: 50%;
         }
 
     &__7{
-        width: 600px;
-        height: 300px;
+        width: 47vw;
+        height: 20vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
-        margin:760px 0px 0px 780px;
+        margin:50vw 0px 0px 48vw;
         position: absolute;
         top: 50%;
     }
 
     &__1{
-        width: 600px;
-        height: 600px;
+        width: 35vw;
+        height: 35vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
-        margin:990px 0px 0px 800px;;
+        margin:65vw 0px 0px 55vw;;
         position: absolute;
         top: 50%;
         border-radius: 50%;
     }
 
     &__6{
-        width: 850px;
-        height: 400px;
+        width: 56vw;
+        height: 21vw;
         border: 2px solid #b7752e;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
         overflow: hidden;
-        margin: 1150px 0px 0px 75px;;
+        margin: 77vw 0px 0px 4vw;;
         position: absolute;
         top: 50%;
     }
@@ -387,14 +387,8 @@ body {
         display: flex
     }
 
-    &__title1{
-        @include title(56px);
-        margin: 3vw auto;
-        text-align: center;
-    }
-
     &__title2{
-        @include title(36px);
+        @include title(3vw);
         margin: 3vw auto;
         text-align: center;
     }
@@ -402,18 +396,18 @@ body {
     &__ficha1{
         max-width:80%;
         margin: 2rem 10vw 0px 15vw;
-        @include text(18px);
-        line-height: 25px;
+        @include text(1.2vw);
+        line-height: 1.4vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 5rem;
+        margin-bottom: 10vw;
     }
 }
 
 .footer{
     background-color: $corBeje;
-    @include text(16px);
+    @include text(1vw);
     color: #100F0F;
     text-align: center;
     padding-bottom: 1rem;
@@ -457,4 +451,72 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width:495px){
+
+    .fotos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr); 
+        gap: 5px;
+        max-width: 95%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    
+
+
+    &__title{
+        margin: 3vw auto;
+        @include title(3vw);
+        text-align: center;
+    }
+
+    .fotogafia{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    &__mobile{
+        width: 100%;
+        height: auto;
+        border-radius: 0%;
+        position: relative;
+        margin: 0 auto;
+        box-shadow: none;
+        border: #B7752E solid 0.5px;
+    }
+}
+
+    .lightBox { 
+        max-width: 72%;
+    }
+
+    .close {
+        top: 35%;
+    }
+
+    .faq{
+        p{
+            margin-bottom: 20px
+        }
+    
+        &__title2{
+            @include title(20px);
+        }
+        
+        &__ficha1{
+            @include text(16px);
+            line-height: 20px;
+            display: block;
+        }
+    }
+
+    .footer{
+        @include text(0.6rem);
+        color: #100F0F;
+    }
 }
