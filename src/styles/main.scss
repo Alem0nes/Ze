@@ -453,7 +453,7 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width:495px){
+@media screen and (max-width:480px){
     .header{
         position: absolute;
         top: 0%;
@@ -499,13 +499,12 @@ body {
                 height: auto;
                 width: auto;
                 padding: 0px;
-                margin: 18% 0 0 92%;
-                position: absolute;
-
+                margin: 0;
+                position: relative;
             }
-    
+            
             &__menu {
-                @include text(18px);
+                @include text(2em);
                 display: flex;
                 list-style-type: none;
             }
@@ -531,7 +530,8 @@ body {
             margin: 100px auto 14px auto;
             justify-content: space-between;
             align-items: center;
-
+            gap: 2px;
+        
         
             .trailerText {
             max-width: none;
@@ -552,8 +552,9 @@ body {
             transition: none;
             text-align: center;
             align-content: center;
+            margin-bottom: 2px;
             }
-
+        
             #chandelerimg {
             max-width: none;
             width: 75px;
