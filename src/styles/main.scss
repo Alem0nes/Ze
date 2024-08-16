@@ -139,7 +139,7 @@ body {
 }
 
 .hero {
-    height: 800 px;
+    height: 700px;
     &__video {
         position: absolute;
         top: 50%;
@@ -167,7 +167,7 @@ body {
             border:#100F0F solid 2px;
             margin-top: 25px;
             color: black;
-            margin-bottom: 100px;
+            margin-bottom: 70px;
             transition: color 0.3s ease, border-color 0.3s ease;
 
             &:hover{
@@ -459,7 +459,7 @@ body {
         top: 0%;
         left: 0;
         width: 100%;
-        height: 90px;
+        height: auto;
         transition: none;
         background-color: #B7752E;
         z-index: 1000;
@@ -512,6 +512,9 @@ body {
     }
     
     .hero {
+
+        height: auto;
+
         &__video {
             position: relative;
             top: 210px;
@@ -537,7 +540,7 @@ body {
             max-width: none;
             width: 40%;
             height: 40px;
-            font-size: 12px;
+            font-size: 1em;
             color: #afafaf;
             font-family: "Poppins", sans-serif;
             font-weight: 400;
