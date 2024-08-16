@@ -534,8 +534,8 @@ body {
         
             .trailerText {
             max-width: none;
-            width: 120px;
-            height: 100%;
+            width: 40%;
+            height: 40px;
             font-size: 12px;
             color: #afafaf;
             font-family: "Poppins", sans-serif;
@@ -547,16 +547,17 @@ body {
             border: #100f0f solid 2px;
             margin-top: 0px;
             color: #000;
-            margin-bottom: 0px;
+            margin: 0px;
             transition: none;
             text-align: center;
+            align-content: center;
             }
 
             #chandelerimg {
             max-width: none;
             width: 75px;
             margin: 0;
-            background-color: rgba(184, 117, 46,);
+            background-color: rgba(184, 117, 46,1);
             border-radius: 5px;
             padding: 1px;
             transition: none;
@@ -564,8 +565,9 @@ body {
     
             #embaubaimg {
             max-width: none;
-            width: 102px;
-            background-color: rgba(184, 117, 46);
+            width: 120px;
+            height: 37px;
+            background-color: rgba(184, 117, 46,1);
             border-radius: 5px;
             padding: 5px;
             margin-bottom: 0;
