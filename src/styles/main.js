@@ -63,14 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showElementsHeader() {
         const header = document.querySelector('header');
+        if(window.innerWidth >= 495){
         header.classList.remove('header--is-hidden');
     }
+}
 
     function hiddenElementsHeader() {
         const header = document.querySelector('header');
+        if(window.innerWidth >= 495){
         header.classList.add('header--is-hidden');
     }
-
+}
     const lightbox = document.getElementById('lightBox');
     const lightboxImage = document.getElementById('lightBoxImg');
     const myImages = document.getElementsByClassName('fotogafia');
