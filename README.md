@@ -1,16 +1,17 @@
 #Website for the movie Zé
 
+https://ze-three.vercel.app/
+
 ##Description
 
-the project is a exemple of the movie website with video background
-The project was created for my portifolio, but I created based in a real movie and I sent to the productor movie (Embaúba Filmes). 
-Every part of this project is a exemple of a sample code for show how to do the:
+The site was based on a real movie and shared with the production company from Brazil, Embaúba Filmes.
+This project is a sample movie website created for my portfolio. It showcases various web development techniques, including mobile responsiveness and interactive media features. 
 
-* Create a website with mobile responsiveness; 
-* Video on the background on the first section, with bottom for turn On/Off the sound;
-* Photo on the backgound;
-* Menu follow the page, change the color after the fist section and show where we are;
-* Photos of the movie with a unique style, and opening with a lightBox;
+* Mobile Responsiveness: The website adjusts seamlessly to different screen sizes.
+* Video Background: The first section includes a video background with an option to turn the sound on or off.
+* Photo Background: Includes a section with a photo background for a dynamic visual experience.
+* Sticky Menu: The menu follows the user as they scroll, changes color after the first section, and highlights the current section.
+* Styled Movie Photos: The movie photos are displayed with a unique style and open in a lightbox for an enhanced viewing experience.
 
 ##Used tech
 
@@ -31,9 +32,9 @@ Every part of this project is a exemple of a sample code for show how to do the:
   <img width="12" />
 </div>
 
-
-
-
-
-
 ##PrintScreen
+
+<div align="center">
+  <img src=./PrintScreen/Screenshot 2024-09-09 111038.png />
+
+  Screenshot 2024-09-09 111038.png
