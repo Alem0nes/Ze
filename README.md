@@ -1,8 +1,8 @@
-#Website for the movie Zé
+# Website for the movie Zé
 
 https://ze-three.vercel.app/
 
-##Description
+## Description
 
 The site was based on a real movie and shared with the production company from Brazil, Embaúba Filmes.
 This project is a sample movie website created for my portfolio. It showcases various web development techniques, including mobile responsiveness and interactive media features. 
@@ -13,7 +13,7 @@ This project is a sample movie website created for my portfolio. It showcases va
 * Sticky Menu: The menu follows the user as they scroll, changes color after the first section, and highlights the current section.
 * Styled Movie Photos: The movie photos are displayed with a unique style and open in a lightbox for an enhanced viewing experience.
 
-##Used tech
+## Technologies Used
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
@@ -32,9 +32,19 @@ This project is a sample movie website created for my portfolio. It showcases va
   <img width="12" />
 </div>
 
-##PrintScreen
+## PrintScreen
 
-<div align="center">
-  <img src=./PrintScreen/Screenshot 2024-09-09 111038.png />
+  ![Screenshot 2024-09-09 111038](https://github.com/user-attachments/assets/1f3d85bb-3149-4ac8-be1e-01d6ac0ca28c)
+  ![Screenshot 2024-09-09 111055](https://github.com/user-attachments/assets/acef146f-76ad-4672-9c62-12e791bcbf74)
+  ![Screenshot 2024-09-09 111106](https://github.com/user-attachments/assets/5e3f70ca-2726-44a6-926c-c8e220f89c88)
+  ![Screenshot 2024-09-09 111121](https://github.com/user-attachments/assets/bde16bbc-4f19-49ad-88ab-c3875715890a)
+  ![Screenshot 2024-09-09 111135](https://github.com/user-attachments/assets/4c6342bd-2eee-45a9-8372-a011c8a326e4)
 
-  Screenshot 2024-09-09 111038.png
+## Consideration
+
+  If you have any feedback or questions about the project, please let me know I’d love to hear from you.</br>
+  This project is free to copy and modify as you like.
+
+ Thank you
+
+
